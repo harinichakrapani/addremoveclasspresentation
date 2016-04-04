@@ -1,0 +1,82 @@
+Write out a explanation of the method and what it's used for and post in the class Slack channel.
+//Method Explanation: <!-- 
+
+Add and Remove Class help provide specific references for different paragraph elements in a webpage. 
+
+Using addClass method, without writing a class reference in the p tag, you can add a class name using jQuery. 
+
+Thereafter you can style the p tag using CSS 
+
+
+Similarly, if the p tag does have an ID and a styling related to it in CSS, we can remove the styling associated with the removeClass jQuery method.  -->
+
+
+
+
+
+
+
+
+
+<head>
+  <title>Method Presentation - addClass-removeClass</title>
+<!-- /*  <style>
+  /*YOUR CSS HERE*/
+  h1{ font-family:monospace; }
+  </style>*/ -->
+
+<link rel="stylesheet" type="text/css" href="style.css"> 
+
+</head>
+ 
+<body>
+ 
+  <h1>addClass/removeClass</h1>
+
+  <div id="one"> 
+  <p> Coding Basics </p> 
+</div>
+
+<div id="two">  
+<p> Harini is learning how to use jQuery </p>  
+</div>
+
+<div id="three"> 
+<p class="para3"> What you need to know </p> 
+</div>
+
+<div id= "test"> 
+<button> click button to see the change </button>  
+</div> 
+ 
+  <!--YOUR HTML HERE-->
+
+<!-- add class not add ID -->
+    
+ 
+  <script src="jquery-1.12.2.js"></script>
+  <script>
+  $(document).ready(function(){
+
+     $("button").click(function() { 
+
+      $("#one p:first").addClass("para1"); 
+
+     $("#three p:last").removeClass("para3"); 
+
+    
+    //YOUR CODE HERE
+
+
+   
+  }); 
+  });
+
+
+
+</script>
+ 
+
+</body>
+ 
+</html>
